@@ -64,7 +64,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex flex-col min-w-0">
             <div className="flex items-center gap-1.5 relative">
               <span className="font-headline-sm text-[17px] text-[#004357] font-semibold tracking-tight">
-                {t('app_title')}
+                {t('app_title') && t('app_title') !== 'app_title' ? t('app_title') : 'Medisync'}
               </span>
 
               {appRole === 'doctor' ? (
